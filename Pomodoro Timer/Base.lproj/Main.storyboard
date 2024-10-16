@@ -12,7 +12,7 @@
                         <items>
                             <menuItem title="Pomodoro Timer" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Pomodoro Timer" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Pomodoro Timer" systemMenu="apple" autoenablesItems="NO" id="uQy-DD-JDr">
                                     <items>
                                         <menuItem title="About Pomodoro Timer" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -46,7 +46,11 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Pomodoro_Timer" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Pomodoro_Timer" customModuleProvider="target">
+                    <connections>
+                        <outlet property="statusMenu" destination="uQy-DD-JDr" id="uFT-hN-dpR"/>
+                    </connections>
+                </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
